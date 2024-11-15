@@ -1,0 +1,26 @@
+[
+  {
+    "sdt": "0123456789",
+    "address": "Hà Nội",
+    "ngay_sinh": "2004-10-21",
+    "sex": "Nam",
+    "schoolId": "ptit",
+    "name": "VIỆT",
+    "id": "1",
+    "class": "10",
+    "coachId": "1",
+    "age": 20
+  },
+  {
+    "sdt": "0987654321",
+    "address": "Hồ Chí Minh",
+    "ngay_sinh": "2003-05-14",
+    "sex": "Nữ",
+    "schoolId": "ptit",
+    "name": "ANH",
+    "id": "2",
+    "class": "11",
+    "coachId": "2",
+    "age": 21
+  }
+]
