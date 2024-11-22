@@ -13,7 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="battle")
-public class Battle{
+public class Tran_dau {
     @Id
     private String id;
 

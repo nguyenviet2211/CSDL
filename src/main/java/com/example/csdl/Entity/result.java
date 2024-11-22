@@ -1,5 +1,6 @@
 package com.example.csdl.Entity;
 
+import com.example.csdl.Entity.CompositeId.ID_result;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

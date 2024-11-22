@@ -28,7 +28,7 @@ public class DataController {
     // POST: Thêm bản ghi mới
     @PostMapping("/List")
     public void addData(@RequestBody Map<String, Object> newData) {
-        int newId = dataList.size() + 1;
+        String newId = "1";
         newData.put("id", newId);
         dataList.add(newData);
 //        return newData; // Return the newly added record

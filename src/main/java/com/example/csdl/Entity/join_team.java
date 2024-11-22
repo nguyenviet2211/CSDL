@@ -1,6 +1,7 @@
 package com.example.csdl.Entity;
 
 
+import com.example.csdl.Entity.CompositeId.ID_JOIN_TEAM;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.IdClass;
