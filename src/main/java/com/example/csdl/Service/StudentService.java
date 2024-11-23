@@ -1,7 +1,7 @@
 package com.example.csdl.Service;
 
 
-import com.example.csdl.Entity.student;
+import com.example.csdl.Entity.hocsinh;
 import com.example.csdl.Repository.studentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,7 +17,7 @@ public class StudentService {
     private studentRepo SRepo;
 
     public List<Map<String, Object>> getAllStudent() {
-        List<student> list = SRepo.getAllStudent();
+        List<hocsinh> list = SRepo.getAllStudent();
         List<Map<String, Object>> listMap = new ArrayList<>();
         list.forEach(student -> {
             Map<String, Object> row = new HashMap<>();

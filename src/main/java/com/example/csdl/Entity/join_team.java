@@ -16,7 +16,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="competition")
-@IdClass(ID_JOIN_TEAM.class)
+@IdClass(thamgiadoi.class)
 public class join_team {
     @Id
     private String studentId;

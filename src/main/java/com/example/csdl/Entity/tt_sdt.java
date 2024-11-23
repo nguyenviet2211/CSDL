@@ -1,9 +1,6 @@
 package com.example.csdl.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.IdClass;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,12 +11,14 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="trong_tai_phone_number")
+@Table(name="tt_sdt")
 @IdClass(ID_TRONG_TAI.class)
-public class trong_tai_phone_number {
+public class tt_sdt {
     @Id
+    @Column(name = "MaTrongTai")
     private String trongTaiId;
 
     @Id
+    @Column(name = "SDT")
     private String phoneNumber;
 }

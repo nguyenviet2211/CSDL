@@ -11,29 +11,29 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="result")
+@Table(name="ketqua")
 @IdClass(ID_result.class)
-public class result {
+public class ketqua {
     @Id
-    @Column(name="STUDENT_ID")
+    @Column(name="MaHS")
     private String studentId;
 
     @Id
-    @Column(name="battle_id")
+    @Column(name="MaTran")
     private String battleId;
 
     @Id
-    @Column(name="team_id")
+    @Column(name="MaDoi")
     private String TeamId;
 
     @Id
-    @Column(name="HIEP_DAU")
+    @Column(name="HiepDau")
     private String hiepDau;
 
-    @Column(name="POINT")
+    @Column(name="Diem")
     private int point;
 
-    @Column(name="THU_HANG")
+    @Column(name="ThuHang")
     private String thuHang;
 
 }

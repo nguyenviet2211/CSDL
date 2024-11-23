@@ -13,28 +13,28 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="student")
-public class student extends SuperClass{
+@Table(name="hocsinh")
+public class hocsinh extends SuperClass{
 
-    @Column(name="DATE_OF_BIRTH")
+    @Column(name="NgaySinh")
     private String dateOfBirth;
 
-    @Column(name="AGE")
+    @Column(name="Tuoi")
     private int age;
 
-    @Column(name="ADDRESS")
+    @Column(name="DiaChi")
     private String address;
 
-    @Column(name="CLASS")
+    @Column(name="Lop")
     private String CLASS;
 
-    @Column(name="SEX")
+    @Column(name="GioiTinh")
     private String sex;
 
-    @Column(name="SCHOOL_ID")
+    @Column(name="MaTruong")
     private String SCHOOL_ID;
 
-    @Column(name="COACH_ID")
+    @Column(name="MaHLV")
     private String COACH_ID;
 
 }

@@ -13,11 +13,13 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @IdClass(ID_CONTROL.class)
-@Table(name="control")
-public class control {
+@Table(name="dieukhien")
+public class dieukhien {
     @Id
+    @Column(name = "MaTrongTai")
     private String trongTaiId;
 
     @Id
+    @Column(name = "MaTran")
     private String battleId;
 }
