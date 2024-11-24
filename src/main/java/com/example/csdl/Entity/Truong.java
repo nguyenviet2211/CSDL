@@ -1,9 +1,9 @@
 package com.example.csdl.Entity;
 
-import com.example.csdl.Entity.CompositeId.ID_TRONG_TAI;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.IdClass;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,12 +15,18 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="trong_tai_phone_number")
-@IdClass(ID_TRONG_TAI.class)
-public class trong_tai_phone_number {
+@Table(name="truonghoc")
+public class Truong {
     @Id
-    private String trongTaiId;
+    @Column(name = "MaTruong")
+    private String id;
 
-    @Id
-    private String phoneNumber;
+    @Column(name="DiaChi")
+    private String address;
+
+    @Column(name = "TenTruong")
+    private String name;
+
+    @Column(name="COMPETITION_ID")
+    private String competitionId;
 }

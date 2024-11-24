@@ -1,5 +1,6 @@
 package com.example.csdl.Entity;
 
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -13,8 +14,12 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "trong_tai")
-public class TrongTai extends SuperClass{
-    @Column(name="mon_thi_id")
-    private String monThiId;
+@Table(name="huanluyenvien")
+public class HuanLuyenVien extends SuperClass{
+
+    @Column(name="Email")
+    private String Email;
+
+    @Column(name="MaTruong")
+    private String school_Id;
 }

@@ -16,7 +16,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="student_phone_number")
-@IdClass(ID_STUDENT.class)
+@IdClass(hs_sdt.class)
 public class student_phone_number {
     @Id
     private String studentID;

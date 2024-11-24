@@ -1,7 +1,5 @@
 package com.example.csdl.Entity;
 
-
-import com.example.csdl.Entity.CompositeId.ID_CONTROL;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,12 +11,14 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@IdClass(ID_CONTROL.class)
-@Table(name="control")
-public class control {
+@Table(name="tt_sdt")
+@IdClass(ID_TRONG_TAI.class)
+public class tt_sdt {
     @Id
+    @Column(name = "MaTrongTai")
     private String trongTaiId;
 
     @Id
-    private String battleId;
+    @Column(name = "SDT")
+    private String phoneNumber;
 }
