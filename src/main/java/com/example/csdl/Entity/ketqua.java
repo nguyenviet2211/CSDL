@@ -17,24 +17,24 @@ import lombok.Setter;
 public class ketqua {
     @Id
     @Column(name="MaHS")
-    private String studentId;
+    private String MaHS;
 
     @Id
     @Column(name="MaTran")
-    private String battleId;
+    private String MaTran;
 
     @Id
     @Column(name="MaDoi")
-    private String TeamId;
+    private String MaDoi;
 
     @Id
     @Column(name="HiepDau")
-    private String hiepDau;
+    private String HiepDau;
 
     @Column(name="Diem")
-    private int point;
+    private int Diem;
 
     @Column(name="ThuHang")
-    private String thuHang;
+    private int thuHang;
 
 }

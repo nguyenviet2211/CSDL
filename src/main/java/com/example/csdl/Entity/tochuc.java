@@ -11,22 +11,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
+@Table(name="tochuc")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="truonghoc")
-public class Truong {
+public class tochuc {
     @Id
-    @Column(name = "MaTruong")
-    private String id;
-
-    @Column(name="DiaChi")
-    private String address;
-
-    @Column(name = "TenTruong")
-    private String name;
-
-    @Column(name="COMPETITION_ID")
-    private String competitionId;
+    @Column(name="T_MaNhaTaiTro")
+    private String MaNhaTaiTro;
 }

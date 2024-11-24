@@ -1,26 +1,27 @@
 package com.example.csdl.Entity;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.example.csdl.Entity.CompositeId.ID_thamgiagiaidau_monthi;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="trandau")
+@Table(name="thamgiagiaidau_monthi")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class trandau {
-    @Id
-    @Column(name="MaTran")
-    private String MaTran;
+@IdClass(ID_thamgiagiaidau_monthi.class)
+public class ThamGiaGiaiDau_MonThi {
 
+    @Id
+    @Column(name="MaGD")
+    private String MaGD;
+
+    @Id
     @Column(name="MaMon")
     private String MaMon;
 }

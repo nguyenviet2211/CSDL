@@ -1,25 +1,24 @@
 package com.example.csdl.Entity.CompositeId;
 
-
 import java.io.Serializable;
 import java.util.Objects;
 
-public class ID_JOIN_BATTLE implements Serializable {
-    private String MaHS;
-    private String MaTran;
+public class ID_taitrogiaidau implements Serializable{
+    private String MaGD;
+    private String MaNhaTaiTro;
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ID_JOIN_BATTLE that = (ID_JOIN_BATTLE) o;
-        return Objects.equals(MaHS, that.MaHS) &&
-                Objects.equals(MaTran, that.MaTran);
+        ID_taitrogiaidau that = (ID_taitrogiaidau) o;
+        return Objects.equals(MaGD, that.MaGD) &&
+                Objects.equals(MaNhaTaiTro, that.MaNhaTaiTro);
     }
 
     // Override hashCode()
     @Override
     public int hashCode() {
-        return Objects.hash(MaTran, MaTran);
+        return Objects.hash(MaGD, MaNhaTaiTro);
     }
 }

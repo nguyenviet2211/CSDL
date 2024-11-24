@@ -1,10 +1,9 @@
 package com.example.csdl.Entity;
 
 
-import com.example.csdl.Entity.CompositeId.ID_JOIN_BATTLE;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.IdClass;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,12 +15,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@IdClass(ID_JOIN_BATTLE.class)
-@Table(name="join_battle")
-public class JOIN_BATTLE {
+@Table(name="caNhan")
+public class canhan {
     @Id
-    private String studentId;
-
-    @Id
-    private String battleId;
+    @Column(name="C_MaNhaTaiTro")
+    private String MaNhaTaiTro;
 }

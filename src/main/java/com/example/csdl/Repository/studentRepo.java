@@ -10,6 +10,6 @@ import java.util.List;
 
 @Repository
 public interface studentRepo extends JpaRepository<hocsinh, Integer> {
-    @Query(value = "SELECT * FROM student ", nativeQuery = true)
-    public List<hocsinh> getAllStudent();
+    @Query(value = "SELECT * FROM hocsinh", nativeQuery = true)
+    public List<hocsinh> getAllHocsinh();
 }

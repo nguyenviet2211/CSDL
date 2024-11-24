@@ -15,21 +15,22 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="mon_thi")
-public class Mon_thi {
+@Table(name="monthidau")
+public class monthidau {
     @Id
-    private String id;
+    @Column(name="MaMon")
+    private String MaMon;
 
-    @Column(name="NAME")
-    private String name;
+    @Column(name="Ten")
+    private String Ten;
 
-    @Column(name="SEX")
-    private String Sex;
+    @Column(name="GioiTinh")
+    private String GioiTinh;
 
-    @Column(name="AGE")
-    private int age;
+    @Column(name="NhomTuoi")
+    private int NhomTuoi;
 
-    @Column(name="COMPETITION_ID")
-    private String competitionId;
+    @Column(name="PhanLoai")
+    private String PhanLoai;
 
 }

@@ -16,7 +16,7 @@ public class DataController {
 
     @PostConstruct
     public void initData() {
-        dataList = studentService.getAllStudent();
+        dataList = studentService.getAllHocSinh();
     }
 
     // GET: Lấy hết dữ liệu hiện len front
